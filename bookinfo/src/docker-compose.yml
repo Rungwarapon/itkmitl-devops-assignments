@@ -33,6 +33,7 @@ services:
     environment:
       ENABLE_EXTERNAL_BOOK_SERVICE: "true"
       DETAILS_HOSTNAME: http://details:9080
+      RATINGS_HOSTNAME: http://ratings:8080
       REVIEWS_HOSTNAME: http://reviews:9080
   reviews:
     build: reviews/

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apache
+  namespace: student10-manifest
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+  selector:
+    app: apache
